@@ -1,0 +1,33 @@
+version: 4.2.29
+session: 6806ddd2fd926217843c7b51
+steps:
+  - prompt: Click on the "Trending" link in the left sidebar.
+    commands:
+      - command: hover-text
+        text: Trending
+        description: trending link in the left sidebar under the Explore section
+        action: click
+  - prompt: Assert the browser navigates to the Trending page.
+    commands:
+      - command: assert
+        expect: the page displays "Trending" at the top
+  - prompt: Click on the "Music" link in the left sidebar.
+    commands:
+      - command: hover-text
+        text: Music
+        description: music link in the left sidebar under the Explore section
+        action: click
+  - prompt: Assert the browser navigates to the Music page.
+    commands:
+      - command: assert
+        expect: the page displays "Music" at the top
+  - prompt: Click on the "Gaming" link in the left sidebar.
+    commands:
+      - command: hover-text
+        text: Gaming
+        description: gaming link in the left sidebar under the Explore section
+        action: click
+  - prompt: Assert the browser navigates to the Gaming page.
+    commands:
+      - command: assert
+        expect: the page displays "Gaming" at the top
