@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 6806dde5fd926217843c7b59
+steps:
+  - prompt: Click on the "Sign in" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button on the YouTube page
+        action: click
+  - prompt: Enter a test email address.
+    commands:
+      - command: hover-text
+        text: Email or phone
+        description: email input field on the Google sign-in page
+        action: click
+      - command: type
+        text: test@example.com
