@@ -1,0 +1,22 @@
+version: 4.2.29
+session: 6806dddbfd926217843c7b54
+steps:
+  - prompt: Click on the "Search" field at the top of the page.
+    commands:
+      - command: hover-text
+        text: Search
+        description: search field at the top center of the YouTube page
+        action: click
+  - prompt: Type in a search term like "test video".
+    commands:
+      - command: type
+        text: test video
+  - prompt: Press the "Enter" key.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Assert that search results are displayed on the page.
+    commands:
+      - command: assert
+        expect: search results are displayed on the page
